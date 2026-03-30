@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yann Durandet</title>
+    <meta name="description" content="Yann Durandet — Designer & Photographer from Normandy, France. Branding, websites, and creative projects. Overly caffeinated creative based in Rouen.">
+    <title>Yann Durandet | Designer & Photographer • Normandy</title>
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Yann Durandet | Designer & Photographer">
+    <meta property="og:description" content="Overly caffeinated, passionate Designer & Photographer from Normandy. Reach out for branding and website design projects.">
+    <meta property="og:image" content="https://yanndurandet.me/assets/DRNDT_logo_dark.svg">
+    <meta property="og:url" content="https://yanndurandet.me/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yann Durandet | Designer & Photographer">
+    <meta name="twitter:description" content="Overly caffeinated, passionate Designer & Photographer from Normandy.">
+
+    <!-- Canonical + Schema -->
+    <link rel="canonical" href="https://yanndurandet.me/">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/website--icon.png" type="image/x-icon">
+    
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 4 (GA4) – Free -->
+    <!-- AFTER SETUP: replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- JSON-LD Person Schema (E-E-A-T boost) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yann Durandet",
+      "url": "https://yanndurandet.me",
+      "jobTitle": "Designer & Photographer",
+      "description": "Overly caffeinated, passionate Designer & Photographer from Normandy, France.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rouen",
+        "addressRegion": "Normandy",
+        "addressCountry": "FR"
+      },
+      "sameAs": [
+        "https://durandet.studio",
+        "https://x.com/YannDurandet",
+        "https://www.linkedin.com/in/yann-durandet-web-designer/",
+        "https://www.instagram.com/durandet.studio",
+        "https://github.com/YannDurandet"
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <div class="linktree-container">
         <div class="profile-header">
-            <img src="assets/DRNDT_logo_dark.svg" alt="">
+            <img src="assets/DRNDT_logo_dark.svg" alt="Yann Durandet Logo" width="180" height="auto">
             <h1 class="profile-name">Yann Durandet</h1>
-            <p class="profile-bio">Overly caffeinated, passionate Designer & Photographer from Normandy.
-                Reach out for any branding or website design projects.</p>
+            <p class="profile-bio">Overly caffeinated, passionate Designer & Photographer from Normandy.<br>Reach out for any branding or website design projects.</p>
         </div>
+        
         <div class="links-list">
             <h2 class="profile-bio">Socials</h2>
-            <a target="_blank" href="https://durandet.studio" class="btn"><img src="assets/Portfolio.png"
-                    alt="Tall Mountains">Studio / Portfolio</a>
+            <a target="_blank" href="https://durandet.studio" class="btn"><img src="assets/Portfolio.png" alt="Portfolio – durandet.studio">Studio / Portfolio</a>
+            
             <div class="icon-row">
-                <a target="_blank" href="https://x.com/YannDurandet" class="btn icon"><img
-                        src="assets/icons/x_icon.svg"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/yann-durandet-web-designer/" class="btn icon"><img
-                        src="assets/icons/linkedin_icon.svg"></a>
-                <a target="_blank" href="https://www.instagram.com/durandet.studio" class="btn icon"><img
-                        src="assets/icons/instagram_icon.svg"></a>
-                <a target="_blank" href="https://github.com/YannDurandet" class="btn icon"><img
-                        src="assets/icons/github_icon.svg"></a>
-                <a target="_blank" href="https://www.youtube.com/@yanndurandet2003" class="btn icon"><img
-                        src="assets/icons/youtube_icon.svg"></a>
-                <a target="_blank" href="https://contra.com/yann_durandet_ecjbh640" class="btn icon"><img
-                        src="assets/icons/contra_icon.svg" alt=""></a>
-                <a target="_blank" href="https://www.malt.fr/profile/yanndurandet?origin=dashboard_profile_name" class="btn icon"><img
-                        src="assets/icons/malt_icon.svg" alt=""></a>
+                <a target="_blank" href="https://x.com/YannDurandet" class="btn icon"><img src="assets/icons/x_icon.svg" alt="X / Twitter"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/yann-durandet-web-designer/" class="btn icon"><img src="assets/icons/linkedin_icon.svg" alt="LinkedIn"></a>
+                <a target="_blank" href="https://www.instagram.com/durandet.studio" class="btn icon"><img src="assets/icons/instagram_icon.svg" alt="Instagram"></a>
+                <a target="_blank" href="https://github.com/YannDurandet" class="btn icon"><img src="assets/icons/github_icon.svg" alt="GitHub"></a>
+                <a target="_blank" href="https://www.youtube.com/@yanndurandet2003" class="btn icon"><img src="assets/icons/youtube_icon.svg" alt="YouTube"></a>
+                <a target="_blank" href="https://contra.com/yann_durandet_ecjbh640" class="btn icon"><img src="assets/icons/contra_icon.svg" alt="Contra"></a>
+                <a target="_blank" href="https://www.malt.fr/profile/yanndurandet?origin=dashboard_profile_name" class="btn icon"><img src="assets/icons/malt_icon.svg" alt="Malt"></a>
             </div>
 
             <h2 class="profile-bio">Apps</h2>
-            <a target="_blank" href="https://yanndurandet.github.io/2026-MOTORSPORTS-CALENDAR/" class="btn"><img
-                    src="assets/MotorsportsCalendar.png"
-                    alt="Edited photography of Niki Lauda & Michèle Mouton, text reads : 'The Department of racing drivers'">2026
-                MASTER MOTORSPORTS CALENDAR</a>
-            <a target="_blank" href="https://yanndurandet.github.io/8bitseditor/" class="btn"><img
-                    src="assets/8bits.png" alt="8bits edited picture of Darth Maul">8bits Editor</a>
-            <a target="_blank" href="https://yanndurandet.github.io/24-hours-of-gradients/" class="btn"><img
-                    src="assets/gradientclock.png"
-                    alt="gradient clock, meant to represent the sunrise & sunset on a 24h clock">Gradient Clock</a>
-
+            <a target="_blank" href="https://yanndurandet.me/8bitseditor" class="btn"><img src="assets/8bits.png" alt="8-Bit Editor – pixel art editor">8-Bit Editor</a>
+            <a target="_blank" href="https://yanndurandet.me/racing" class="btn"><img src="assets/MotorsportsCalendar.png" alt="2026 Motorsports Calendar">2026 Master Motorsports Calendar</a>
+            <a target="_blank" href="https://yanndurandet.github.io/24-hours-of-gradients/" class="btn"><img src="assets/gradientclock.png" alt="24-Hour Gradient Clock">Gradient Clock</a>
         </div>
     </div>
 </body>
-
 </html>
