@@ -1,0 +1,9 @@
+**/.git
+**/.gitignore
+**/.vscode
+**/.wrangler
+**/node_modules
+**/.DS_Store
+README.md
+wrangler.jsonc
+.assetsignore

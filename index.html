@@ -9,12 +9,30 @@
     <!-- Open Graph / Social -->
     <meta property="og:title" content="Yann Durandet | Web & Brand Designer">
     <meta property="og:description" content="Designer from Normandy. Branding, web, and an obsessive attention to detail. Reach out for any branding or website design projects.">
-    <meta property="og:image" content="https://yanndurandet.me/assets/DRNDT_logo_dark.svg">
     <meta property="og:url" content="https://yanndurandet.me/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Yann Durandet">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- 1.91:1 first: it's the ratio Facebook, LinkedIn and X crop to, and
+         scrapers treat the first og:image as primary. Square is the fallback
+         for clients that prefer it (WhatsApp, some chat apps). -->
+    <meta property="og:image" content="https://yanndurandet.me/assets/og-191.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1900">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:alt" content="Yann Durandet — web and brand designer, Normandy">
+    <meta property="og:image" content="https://yanndurandet.me/assets/og-square.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:alt" content="Yann Durandet — web and brand designer, Normandy">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Yann Durandet | Web & Brand Designer">
     <meta name="twitter:description" content="Designer from Normandy. Branding, web, and an obsessive attention to detail.">
+    <meta name="twitter:image" content="https://yanndurandet.me/assets/og-191.jpg">
+    <meta name="twitter:image:alt" content="Yann Durandet — web and brand designer, Normandy">
 
     <!-- Canonical + Schema -->
     <link rel="canonical" href="https://yanndurandet.me/">
@@ -25,20 +43,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" href="assets/website--icon.png" type="image/x-icon">
+    <link rel="icon" href="assets/website--icon.png" type="image/png">
     
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Google Analytics 4 (GA4) – Free -->
-    <!-- AFTER SETUP: replace G-XXXXXXXXXX with your actual Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
 
     <!-- JSON-LD Person Schema (E-E-A-T boost) -->
     <script type="application/ld+json">
@@ -47,7 +55,8 @@
       "@type": "Person",
       "name": "Yann Durandet",
       "url": "https://yanndurandet.me",
-      "jobTitle": "Web & BrandDesigner",
+      "image": "https://yanndurandet.me/assets/og-square.jpg",
+      "jobTitle": "Web & Brand Designer",
       "description": "Designer from Normandy. Branding, web, and an obsessive attention to detail.",
       "address": {
         "@type": "PostalAddress",
@@ -69,7 +78,7 @@
 <body>
     <div class="linktree-container">
         <div class="profile-header">
-            <img src="assets/DRNDT_logo_dark.svg" alt="Yann Durandet Logo" width="180" height="auto">
+            <img src="assets/DRNDT_logo_dark.svg" alt="Yann Durandet Logo" width="180" height="56">
             <h1 class="profile-name">Yann Durandet</h1>
             <p class="profile-bio">Designer from Normandy. Branding, web, and an obsessive attention to detail.</p>
         </div>
