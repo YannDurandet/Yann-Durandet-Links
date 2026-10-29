@@ -1,107 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Designer from Normandy. Branding, web, and an obsessive attention to detail.">
-    <title>Yann Durandet | Web & Brand Designer • Normandy</title>
-    
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="Yann Durandet | Web & Brand Designer">
-    <meta property="og:description" content="Designer from Normandy. Branding, web, and an obsessive attention to detail. Reach out for any branding or website design projects.">
-    <meta property="og:url" content="https://yanndurandet.me/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Yann Durandet">
-    <meta property="og:locale" content="en_GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-fr="Yann Durandet – Designer couteau-suisse">Yann Durandet – French Swiss-knife Designer</title>
+<meta name="description" content="I make a lot of things: websites, brand designs, Minecraft mods, SEO… Here’s the best of my projects." data-fr="Je fais plein de choses&nbsp;: sites web, identités de marque, mods Minecraft, SEO… Voici le meilleur de mes projets.">
+<meta name="theme-color" content="#eee8df">
+<link rel="canonical" href="https://yanndurandet.me/">
 
-    <!-- 1.91:1 first: it's the ratio Facebook, LinkedIn and X crop to, and
-         scrapers treat the first og:image as primary. Square is the fallback
-         for clients that prefer it (WhatsApp, some chat apps). -->
-    <meta property="og:image" content="https://yanndurandet.me/assets/og-191.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1900">
-    <meta property="og:image:height" content="1000">
-    <meta property="og:image:alt" content="Yann Durandet — web and brand designer, Normandy">
-    <meta property="og:image" content="https://yanndurandet.me/assets/og-square.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1000">
-    <meta property="og:image:height" content="1000">
-    <meta property="og:image:alt" content="Yann Durandet — web and brand designer, Normandy">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yanndurandet.me/">
+<meta property="og:site_name" content="Yann Durandet">
+<meta property="og:title" content="Yann Durandet – French Swiss-knife Designer">
+<meta property="og:description" content="I make a lot of things: websites, brand designs, Minecraft mods, SEO… Here’s the best of my projects.">
+<!-- 1.91:1 first (Facebook, LinkedIn, X, iMessage crop to it); square is the fallback (WhatsApp) -->
+<meta property="og:image" content="https://yanndurandet.me/assets/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yann Durandet – French Swiss-knife Designer">
+<meta property="og:image" content="https://yanndurandet.me/assets/og-square.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Yann Durandet – French Swiss-knife Designer">
+<meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yann Durandet | Web & Brand Designer">
-    <meta name="twitter:description" content="Designer from Normandy. Branding, web, and an obsessive attention to detail.">
-    <meta name="twitter:image" content="https://yanndurandet.me/assets/og-191.jpg">
-    <meta name="twitter:image:alt" content="Yann Durandet — web and brand designer, Normandy">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <!-- Canonical + Schema -->
-    <link rel="canonical" href="https://yanndurandet.me/">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/website--icon.png" type="image/png">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="style.css">
+<link rel="preload" href="assets/fonts/plex-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plex-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plex-300.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- JSON-LD Person Schema (E-E-A-T boost) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Yann Durandet",
-      "url": "https://yanndurandet.me",
-      "image": "https://yanndurandet.me/assets/og-square.jpg",
-      "jobTitle": "Web & Brand Designer",
-      "description": "Designer from Normandy. Branding, web, and an obsessive attention to detail.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rouen",
-        "addressRegion": "Normandy",
-        "addressCountry": "FR"
-      },
-      "sameAs": [
-        "https://durandet.studio",
-        "https://x.com/YannDurandet",
-        "https://www.linkedin.com/in/yann-durandet-web-designer/",
-        "https://www.instagram.com/durandet.studio",
-        "https://github.com/YannDurandet"
-      ]
-    }
-    </script>
+<style>
+@font-face{font-family:"IBM Plex Serif";font-weight:300;font-display:swap;src:url(assets/fonts/plex-300.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Serif";font-weight:500;font-display:swap;src:url(assets/fonts/plex-500.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Serif";font-weight:600;font-display:swap;src:url(assets/fonts/plex-600.woff2) format("woff2")}
+
+:root{
+  --page:#eee8df;
+  --text:#2c365a;
+  --line:#cabcb0;
+  --gutter:min(9.55vw,42px);
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100svh;
+  padding:64px var(--gutter);
+  background:var(--page);
+  color:var(--text);
+  font:300 1rem/1.3 "IBM Plex Serif",Georgia,serif;
+  font-size-adjust:from-font; /* after the shorthand, which resets it; keeps the Georgia fallback the same visual size */
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+h1,h2,h3,p{margin:0}
+h1{font-size:2rem;font-weight:600;text-wrap:balance}
+h2,h3{font-size:1.5rem;font-weight:500;text-wrap:balance}
+p{text-wrap:pretty}
+
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--text);outline-offset:4px}
+
+.wrap{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  width:100%;
+  max-width:356px;
+  margin-inline:auto;
+}
+
+header{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+
+nav{display:flex;flex-wrap:wrap;justify-content:center;column-gap:32px}
+/* Padding + equal negative margin: 24px+ tap target (the "X" is only ~11px wide) without moving the text */
+nav a{padding:12px 8px;margin-inline:-8px}
+
+section{display:flex;flex-direction:column}
+
+.intro{display:flex;flex-direction:column;gap:6px}
+.intro,.card{padding-block-end:16px}
+.intro{border-block-end:1px solid var(--line)}
+
+.card{display:block;padding-block-start:24px;border-block-end:1px solid var(--line);background:rgb(202 188 176/0);transition:background-color .3s}
+.card img{display:block;width:100%;height:auto;margin-block-end:8px;background:var(--line)}
+.card h3,.card p{padding-inline:4px}
+
+@media (hover:hover){
+  .card:hover{background-color:rgb(202 188 176/.33)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .card{transition:none}
+}
+</style>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yann Durandet","url":"https://yanndurandet.me","jobTitle":"Designer","image":"https://yanndurandet.me/assets/og-square.png","address":{"@type":"PostalAddress","addressRegion":"Normandy","addressCountry":"FR"},"sameAs":["https://durandet.studio","https://x.com/YannDurandet","https://instagram.com/yann.drndt","https://github.com/YannDurandet"]}</script>
 </head>
 
 <body>
-    <div class="linktree-container">
-        <div class="profile-header">
-            <img src="assets/DRNDT_logo_dark.svg" alt="Yann Durandet Logo" width="180" height="56">
-            <h1 class="profile-name">Yann Durandet</h1>
-            <p class="profile-bio">Designer from Normandy. Branding, web, and an obsessive attention to detail.</p>
-        </div>
-        
-        <div class="links-list">
-            <h2 class="profile-bio">Socials</h2>
-            <a target="_blank" href="https://durandet.studio" class="btn"><img src="assets/Portfolio.png" alt="Portfolio – durandet.studio">Studio / Portfolio</a>
-            
-            <div class="icon-row">
-                <a target="_blank" href="https://x.com/YannDurandet" class="btn icon"><img src="assets/icons/x_icon.svg" alt="X / Twitter"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/yann-durandet-web-designer/" class="btn icon"><img src="assets/icons/linkedin_icon.svg" alt="LinkedIn"></a>
-                <a target="_blank" href="https://www.instagram.com/durandet.studio" class="btn icon"><img src="assets/icons/instagram_icon.svg" alt="Instagram"></a>
-                <a target="_blank" href="https://github.com/YannDurandet" class="btn icon"><img src="assets/icons/github_icon.svg" alt="GitHub"></a>
-                <a target="_blank" href="https://www.youtube.com/@yanndurandet2003" class="btn icon"><img src="assets/icons/youtube_icon.svg" alt="YouTube"></a>
-                <a target="_blank" href="https://contra.com/yann_durandet_ecjbh640" class="btn icon"><img src="assets/icons/contra_icon.svg" alt="Contra"></a>
-                <a target="_blank" href="https://www.malt.fr/profile/yanndurandet?origin=dashboard_profile_name" class="btn icon"><img src="assets/icons/malt_icon.svg" alt="Malt"></a>
-            </div>
+<div class="wrap">
+  <header>
+    <h1>Yann Durandet</h1>
+    <nav aria-label="Social and contact">
+      <a href="https://x.com/YannDurandet">X</a>
+      <a href="https://instagram.com/yann.drndt">Instagram</a>
+      <a href="https://github.com/YannDurandet">GitHub</a>
+      <a href="mailto:durandet.yann+me@gmail.com">e-mail</a>
+    </nav>
+  </header>
 
-            <h2 class="profile-bio">Apps</h2>
-            <a target="_blank" href="https://dord.racing/yd" class="btn"><img src="assets/MotorsportsCalendar.png" alt="2026 Motorsports Calendar">2026 Master Motorsports Calendar</a>
-            <a target="_blank" href="https://yanndurandet.me/8bitseditor" class="btn"><img src="assets/8bits.png" alt="8-Bit Editor – pixel art editor">8-Bit Editor</a>
-            <a target="_blank" href="https://yanndurandet.github.io/24-hours-of-gradients/" class="btn"><img src="assets/gradientclock.png" alt="24-Hour Gradient Clock">Gradient Clock</a>
-        </div>
-    </div>
+  <main>
+    <section>
+      <div class="intro">
+        <h2 data-fr="Designer couteau-suisse">French Swiss-knife Designer</h2>
+        <p data-fr="Je fais plein de choses&nbsp;: sites web, identités de marque, mods Minecraft, SEO… Voici le meilleur de mes projets&nbsp;:">I make a lot of things : websites, brand designs, Minecraft mods, SEO… Here’s the best of my projects:</p>
+      </div>
+
+      <a class="card" href="https://durandet.studio">
+        <img src="assets/thumb-durandet-studio.webp" width="712" height="96" alt="" fetchpriority="high" decoding="async">
+        <h3>Durandet Studio</h3>
+        <p data-fr="Contactez-moi pour tout projet d’image de marque, logo ou site web…">Inquire about any brand/web related projects.</p>
+      </a>
+
+      <a class="card" href="https://dord.racing">
+        <img src="assets/thumb-dord.webp" width="712" height="96" alt="" decoding="async">
+        <h3>Department of Racing Drivers</h3>
+        <p data-fr="Calendrier complet (+&nbsp;de&nbsp;25 championnats)<br>&amp; guides mondiaux (+&nbsp;de&nbsp;130 circuits)">Complete Racing Calendar (25+ series)<br>&amp; Worldwide Track Guides (130+ Circuits)</p>
+      </a>
+
+      <a class="card" href="https://pinpire.com">
+        <img src="assets/thumb-pinpire.webp" width="712" height="96" alt="" loading="lazy" decoding="async">
+        <h3>Pinpire</h3>
+        <p data-fr="Jeu de géographie&nbsp;: retrouvez le pays, de 5000&nbsp;av.&nbsp;J.-C. jusqu’à nos jours">Country guessing Game from 5000BC to today</p>
+      </a>
+    </section>
+  </main>
+</div>
+
+<script>
+/* Swap in the French copy (data-fr) when the browser's preferred language is French.
+   Runs before first paint, so there is no flash of English. */
+if(/^fr/i.test(navigator.language)){
+  document.documentElement.lang="fr";
+  document.querySelector("nav").setAttribute("aria-label","Réseaux sociaux et contact");
+  document.querySelectorAll("[data-fr]").forEach(function(e){
+    if(e.localName==="meta")e.content=e.dataset.fr;else e.innerHTML=e.dataset.fr;
+  });
+}
+</script>
 </body>
 </html>

@@ -4,3 +4,8 @@
 !.dev.vars.example
 .env*
 !.env.example
+.claude
+.vscode
+# macOS / local tooling
+.DS_Store
+node_modules

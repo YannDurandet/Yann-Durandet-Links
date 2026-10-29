@@ -7,3 +7,6 @@
 README.md
 wrangler.jsonc
 .assetsignore
+**/.claude
+source-assets
+scripts
